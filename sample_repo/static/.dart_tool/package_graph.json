@@ -1,0 +1,14 @@
+{
+  "roots": [
+    "asesmen_1_static"
+  ],
+  "packages": [
+    {
+      "name": "asesmen_1_static",
+      "version": "1.0.0",
+      "dependencies": [],
+      "devDependencies": []
+    }
+  ],
+  "configVersion": 1
+}

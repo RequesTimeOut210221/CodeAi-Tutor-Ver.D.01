@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#f0eded","primary-fixed":"#ffe083","surface-bright":"#fcf9f8","tertiary":"#7b41b4","on-primary":"#ffffff","on-tertiary-fixed-variant":"#62259b","secondary-fixed":"#68fcbf","surface-container-low":"#f6f3f2","on-tertiary":"#ffffff","on-surface-variant":"#4d4632","surface-variant":"#e4e2e1","on-secondary":"#ffffff","surface":"#fcf9f8","primary-fixed-dim":"#eec200","on-primary-container":"#6c5700","on-secondary-fixed":"#002114","tertiary-fixed":"#f0dbff","on-error-container":"#93000a","secondary-container":"#64f9bc","error-container":"#ffdad6","inverse-primary":"#eec200","on-tertiary-fixed":"#2c0051","primary-container":"#facc15","tertiary-container":"#e4c5ff","surface-tint":"#735c00","secondary":"#006c4b","on-secondary-container":"#00714e","on-primary-fixed":"#231b00","on-tertiary-container":"#763baf","on-secondary-fixed-variant":"#005137","error":"#ba1a1a","surface-container-lowest":"#ffffff","inverse-surface":"#303030","primary":"#735c00","outline":"#7f7660","surface-dim":"#dcd9d9","surface-container-high":"#eae7e7","outline-variant":"#d1c6ab","background":"#fcf9f8","on-surface":"#1b1c1c","inverse-on-surface":"#f3f0f0","surface-container-highest":"#e4e2e1","on-error":"#ffffff","on-background":"#1b1c1c","secondary-fixed-dim":"#45dfa4","tertiary-fixed-dim":"#ddb8ff","on-primary-fixed-variant":"#574500"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-lg":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","gutter-mobile":"1rem","gutter":"1.5rem","space-xs":"0.25rem","margin":"2rem","space-sm":"0.5rem","space-md":"1rem"},fontFamily:{"body-md":["JetBrains Mono"],"headline-lg-mobile":["Bricolage Grotesque"],"headline-xl":["Bricolage Grotesque"],"headline-lg":["Bricolage Grotesque"],"headline-md":["Bricolage Grotesque"],"label-md":["JetBrains Mono"],"body-sm":["JetBrains Mono"],"headline-xl-mobile":["Bricolage Grotesque"],"headline-sm":["Bricolage Grotesque"],"label-sm":["JetBrains Mono"],"label-lg":["JetBrains Mono"],"body-lg":["JetBrains Mono"]},fontSize:{"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"32px",letterSpacing:"0em",fontWeight:"700"}],"headline-xl":["48px",{lineHeight:"54px",letterSpacing:"-0.02em",fontWeight:"800"}],"headline-lg":["36px",{lineHeight:"42px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"30px",letterSpacing:"0em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"headline-xl-mobile":["32px",{lineHeight:"38px",letterSpacing:"-0.01em",fontWeight:"800"}],"headline-sm":["20px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"500"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.02em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"500"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="CodeTutor AI Doodle Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XlTUbQG5KX0kosCNjSw2GIC2wkTAK4IyqiV9EHNlU9gBAOkTqp-6L1LC9zhg9z_kzb-oIbdPUstGx3YGUNtEd_c6Fy87jJfsJg9Wz2Md9wX1W8_ugm560Ha4P1SJCSZ0_lV1AvRwnHBZWnzJACVkjBuHJRrmRbZw8naCNuGiRRJX6BpR8LZpPt_xLDOcyGgmo5AoR-pKAH6SYy2sS7UvMjQHuZCU-SWArZ6QI_jHX5qwufRQpPATNCN4-9"/><span class="font-headline-md text-headline-md tracking-tight text-on-surface">CodeTutor AI</span><span class="px-space-sm py-space-xs rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider rotate-[-1.5deg]">v2.5 Doodle Edition</span></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[2px_2px_0px_#1b1c1c]"><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="codetutor-ai---assessment-&amp;-practice-workspace" href="#">Practice Workspace</a><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[2px_2px_0px_#1b1c1c]" data-path="codetutor-ai---active-assessment-quiz-view" href="#">Active Assessment Quiz View</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-path="codetutor-ai---grading-&amp;-performance-report-view" href="#">Grading &amp; Performance Report View</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Connected (Gemini 1.5 Pro)</span></div><div class="hidden sm:flex items-center px-space-sm py-space-xs rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] mr-space-xs">search</span><span>⌘K Search</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-low z-30 flex flex-col justify-between py-space-md px-space-sm"><div class="flex flex-col gap-space-md"><div class="mx-space-xs p-space-sm rounded bg-surface-container-lowest text-on-surface shadow-[2px_2px_0px_#1b1c1c]"><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">star</span><span>ACTIVE REPO</span></div><p class="font-label-md text-label-md font-bold truncate mt-space-xs text-on-surface">codetutor-sandbox-app</p></div><nav class="flex flex-col gap-space-xs px-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[2px_2px_0px_#1b1c1c]"><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="codetutor-ai---assessment-&amp;-practice-workspace" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">code</span>Practice Workspace</a><a aria-current="page" class="flex items-center px-space-sm py-space-sm transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[2px_2px_0px_#1b1c1c]" data-path="codetutor-ai---active-assessment-quiz-view" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">quiz</span>Active Quiz Assessment</a><a class="flex items-center px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="codetutor-ai---grading-&amp;-performance-report-view" href="#"><span class="material-symbols-outlined mr-space-sm text-[20px]">insights</span>Performance Report &amp; Evaluation</a></nav></div><div class="mx-space-xs p-space-md rounded bg-surface-container-lowest text-on-surface shadow-[2px_2px_0px_#1b1c1c] flex flex-col gap-space-xs"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant font-medium">Live Mastery</span><span class="font-bold text-secondary font-label-md text-label-md">84% Ready</span></div><div class="w-full h-2 rounded-full bg-surface-variant overflow-hidden"><div class="h-full bg-primary-container w-[84%]"></div></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Next checkpoint in 2 tests</p></div></aside><div class="pl-64"><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Decorative Graph Paper & Drafting Canvas Container -->
+<div class="w-full px-gutter py-space-md flex flex-col gap-space-lg max-w-[1400px] mx-auto">
+<!-- 1. Top Section & Sketched Stage Tracker -->
+<div class="relative bg-surface-container-lowest rounded-lg p-space-md shadow-[3px_3px_0px_#1b1c1c] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<!-- Tape visual anchor at top center -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-28 h-6 bg-surface-variant/80 rotate-[-1deg] shadow-[1px_1px_0px_#1b1c1c] pointer-events-none flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-70 tracking-widest uppercase">TEST_DRAFT_#42</span>
+</div>
+<!-- Module & Session Header -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-sm py-space-xs rounded bg-error-container text-on-error-container font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-space-xs shadow-[2px_2px_0px_#1b1c1c]">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+            LIVE SESSION 24:13
+          </span>
+<span class="font-label-md text-label-md text-on-surface-variant">Module 04 // Advanced Concurrency</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight flex items-center gap-space-xs">
+<span>Concurrent React 19 State &amp; Network Sync</span>
+<span class="text-primary font-headline-sm text-headline-sm rotate-[4deg]">✍️</span>
+</h1>
+</div>
+<!-- Stage Progress Tracker (Sketched Roadway) -->
+<div class="flex items-center gap-space-sm w-full lg:w-auto overflow-x-auto pb-space-xs lg:pb-0">
+<!-- Step 1: Multiple Choice (Completed) -->
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-secondary-container text-on-secondary-container shadow-[2px_2px_0px_#1b1c1c] rotate-[-0.5deg] shrink-0">
+<span class="material-symbols-outlined text-[18px] text-secondary font-bold">check_box</span>
+<span class="font-label-sm text-label-sm line-through opacity-80">1. Multiple Choice</span>
+<span class="px-space-xs bg-surface-container-lowest text-secondary font-label-sm text-label-sm rounded ml-space-xs shadow-[1px_1px_0px_#1b1c1c]">100%</span>
+</div>
+<!-- Arrow connector doodle -->
+<span class="font-headline-sm text-headline-sm text-on-surface-variant select-none opacity-40 shrink-0">➔</span>
+<!-- Step 2: Code Fix Challenge (Active) -->
+<div class="relative flex items-center gap-space-xs px-space-md py-space-xs rounded bg-primary-container text-on-primary-container shadow-[3px_3px_0px_#1b1c1c] rotate-[1deg] shrink-0">
+<div class="absolute -top-2.5 -right-2 bg-on-surface text-surface font-label-sm text-label-sm px-1.5 py-0.5 rounded rotate-[8deg] shadow-[1px_1px_0px_#1b1c1c]">
+            IN PROGRESS
+          </div>
+<span class="material-symbols-outlined text-[18px] animate-spin">cyclone</span>
+<span class="font-label-md text-label-md font-bold">2. Code Fix Challenge</span>
+<span class="font-label-sm text-label-sm text-on-primary-container ml-space-xs font-semibold">(Active)</span>
+</div>
+<!-- Arrow connector doodle -->
+<span class="font-headline-sm text-headline-sm text-on-surface-variant select-none opacity-40 shrink-0">➔</span>
+<!-- Step 3: Architecture Essay (Locked) -->
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface-variant opacity-70 shadow-[2px_2px_0px_#1b1c1c] rotate-[-0.75deg] shrink-0">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span class="font-label-sm text-label-sm">3. Architecture Essay</span>
+<span class="font-label-sm text-label-sm px-1 bg-surface-variant rounded">Locked</span>
+</div>
+</div>
+</div>
+<!-- MAIN TWO-COLUMN CONTENT ARENA -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT: ASSESSMENT ARENA (Col 1-8/9) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- Challenge Header Card -->
+<div class="relative bg-surface-container-lowest rounded-lg p-space-lg shadow-[4px_4px_0px_#1b1c1c] flex flex-col gap-space-md">
+<!-- Bookmark Ribbon Visual -->
+<div class="absolute -top-2 right-6 w-8 h-12 bg-primary-container shadow-[2px_2px_0px_#1b1c1c] flex items-end justify-center pb-1 clip-path-ribbon">
+<span class="material-symbols-outlined text-[16px] text-on-primary-container">bookmark</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pr-12">
+<span class="px-space-sm py-space-xs rounded bg-surface-container text-on-surface font-label-md text-label-md shadow-[1px_1px_0px_#1b1c1c]">
+              TASK #03 OF 09
+            </span>
+<span class="px-space-sm py-space-xs rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold shadow-[2px_2px_0px_#1b1c1c] rotate-[-1deg]">
+              HIGH COMPLEXITY • 40 PTS
+            </span>
+<span class="px-space-sm py-space-xs rounded bg-surface-variant text-on-surface-variant font-label-sm text-label-sm">
+              Target: React 19 Canary / Suspense
+            </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+              Squash Race Condition &amp; Memory Leak in Event Stream
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              The high-frequency telemetry hook below triggers asynchronous state tearing under concurrent transitions. Fix the unhandled promise rejection on component unmount and replace the naive cancellation token with an <code class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-primary font-semibold">AbortController</code> signal.
+            </p>
+</div>
+<!-- Evaluation Rubric List with Hand-drawn Bullets -->
+<div class="p-space-md rounded-lg bg-surface-container-low shadow-[2px_2px_0px_#1b1c1c] flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">checklist</span>
+                Evaluation Criteria &amp; Scoring Rubric:
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Deduction Tolerance: 0 warnings</span>
+</div>
+<ul class="flex flex-col gap-space-xs mt-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-space-sm">
+<span class="w-4 h-4 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5 shadow-[1px_1px_0px_#1b1c1c]">✓</span>
+<span>Properly bind <code class="font-mono bg-surface-container px-1 rounded">abortController.signal</code> to the streaming fetch reader pipeline (+15 pts)</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="w-4 h-4 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5 shadow-[1px_1px_0px_#1b1c1c]">✓</span>
+<span>Wrap concurrent state updates in <code class="font-mono bg-surface-container px-1 rounded">React.startTransition</code> to prevent UI hitch (+15 pts)</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="w-4 h-4 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5 shadow-[1px_1px_0px_#1b1c1c]">✓</span>
+<span>Guarantee clean idempotent teardown in hook unmount effect (+10 pts)</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- SPLIT-PANE CODE FIX CHALLENGE -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Left Pane: Buggy Baseline -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest shadow-[3px_3px_0px_#1b1c1c] overflow-hidden">
+<!-- File Tab Sketch -->
+<div class="px-space-md py-space-xs bg-surface-container-high flex items-center justify-between border-b-2 border-[#1b1c1c]">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-error">bug_report</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">useTelemetryStream.tsx</span>
+<span class="px-1 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">Buggy Source</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Read Only</span>
+</div>
+<!-- Code listing with sketch bug callouts -->
+<div class="p-space-md font-mono text-body-sm leading-relaxed overflow-x-auto bg-surface-container-lowest text-on-surface flex flex-col gap-1 select-none">
+<div class="flex gap-space-md opacity-50">
+<span class="w-6 text-right select-none text-on-surface-variant">01</span>
+<span>export function useTelemetryStream(url: string) {</span>
+</div>
+<div class="flex gap-space-md opacity-50">
+<span class="w-6 text-right select-none text-on-surface-variant">02</span>
+<span>  const [telemetry, setTelemetry] = useState&lt;Data&gt;(null);</span>
+</div>
+<div class="flex gap-space-md opacity-50">
+<span class="w-6 text-right select-none text-on-surface-variant">03</span>
+<span>  const [isPending, setIsPending] = useState(false);</span>
+</div>
+<div class="flex gap-space-md opacity-50">
+<span class="w-6 text-right select-none text-on-surface-variant">04</span>
+<span></span>
+</div>
+<!-- Bug Line 1: No abort controller -->
+<div class="flex gap-space-md bg-error-container/40 p-0.5 rounded relative group">
+<span class="w-6 text-right select-none text-error font-bold">05</span>
+<span class="text-on-surface font-semibold">  useEffect(() =&gt; {</span>
+<span class="ml-auto text-error font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Missing Signal
+                </span>
+</div>
+<!-- Bug Line 2: Async race -->
+<div class="flex gap-space-md bg-error-container/40 p-0.5 rounded relative">
+<span class="w-6 text-right select-none text-error font-bold">06</span>
+<span class="text-on-surface">    fetch(url).then(res =&gt; res.json())</span>
+</div>
+<div class="flex gap-space-md bg-error-container/40 p-0.5 rounded relative">
+<span class="w-6 text-right select-none text-error font-bold">07</span>
+<span class="text-on-surface">      .then(data =&gt; setTelemetry(data));</span>
+<span class="ml-auto text-error font-label-sm text-label-sm">Race!</span>
+</div>
+<div class="flex gap-space-md">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">08</span>
+<span class="opacity-50">    // Note: No cleanup function returned!</span>
+</div>
+<div class="flex gap-space-md bg-error-container/50 p-0.5 rounded">
+<span class="w-6 text-right select-none text-error font-bold">09</span>
+<span class="text-error font-bold underline decoration-wavy decoration-error">  }, [url]); // Memory leak on unmount</span>
+</div>
+<div class="flex gap-space-md opacity-50">
+<span class="w-6 text-right select-none text-on-surface-variant">10</span>
+<span>  return { telemetry, isPending };</span>
+</div>
+<div class="flex gap-space-md opacity-50">
+<span class="w-6 text-right select-none text-on-surface-variant">11</span>
+<span>}</span>
+</div>
+</div>
+<!-- Annotated sticky memo below bug -->
+<div class="p-space-sm m-space-sm rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-[1px_1px_0px_#1b1c1c] flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-error">info</span>
+<span>Observed: Fast URL param switching overwrites state with stale cached data.</span>
+</div>
+</div>
+<!-- Right Pane: Interactive Solution Editor -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest shadow-[3px_3px_0px_#1b1c1c] overflow-hidden">
+<!-- File Tab Sketch -->
+<div class="px-space-md py-space-xs bg-primary-container/40 flex items-center justify-between border-b-2 border-[#1b1c1c]">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">edit_document</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Your Solution Patch</span>
+<span class="px-1 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm">Active Draft</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-xs py-0.5 rounded bg-surface-container-lowest hover:bg-surface-container font-label-sm text-label-sm shadow-[1px_1px_0px_#1b1c1c]">
+                  Reset Code
+                </button>
+</div>
+</div>
+<!-- Editable Code Simulation -->
+<div class="p-space-md font-mono text-body-sm leading-relaxed overflow-x-auto bg-surface-container-lowest text-on-surface flex flex-col gap-1">
+<div class="flex gap-space-md">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">01</span>
+<span class="text-tertiary font-bold">useEffect</span>(() =&gt; {
+              </div>
+<div class="flex gap-space-md bg-secondary-container/30 p-0.5 rounded">
+<span class="w-6 text-right select-none text-secondary font-bold">02</span>
+<span> <span class="text-secondary font-bold">const</span> controller = <span class="text-primary font-bold">new</span> AbortController();</span>
+</div>
+<div class="flex gap-space-md bg-secondary-container/30 p-0.5 rounded">
+<span class="w-6 text-right select-none text-secondary font-bold">03</span>
+<span> <span class="text-secondary font-bold">const</span> { signal } = controller;</span>
+</div>
+<div class="flex gap-space-md">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">04</span>
+<span>  fetch(url, { signal })</span>
+</div>
+<div class="flex gap-space-md">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">05</span>
+<span>    .then(r =&gt; r.json())</span>
+</div>
+<div class="flex gap-space-md bg-primary-container/30 p-0.5 rounded">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">06</span>
+<span>    .then(payload =&gt; {</span>
+</div>
+<div class="flex gap-space-md bg-primary-container/30 p-0.5 rounded">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">07</span>
+<span> <span class="text-tertiary font-bold">startTransition</span>(() =&gt; setTelemetry(payload));</span>
+</div>
+<div class="flex gap-space-md bg-primary-container/30 p-0.5 rounded">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">08</span>
+<span>    })</span>
+</div>
+<div class="flex gap-space-md">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">09</span>
+<span>    .catch(err =&gt; {</span>
+</div>
+<div class="flex gap-space-md">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">10</span>
+<span> <span class="text-primary font-bold">if</span> (err.name !== <span class="text-secondary">'AbortError'</span>) throw err;</span>
+</div>
+<div class="flex gap-space-md">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">11</span>
+<span>    });</span>
+</div>
+<div class="flex gap-space-md bg-secondary-container/40 p-0.5 rounded font-bold">
+<span class="w-6 text-right select-none text-secondary">12</span>
+<span> <span class="text-primary">return</span> () =&gt; controller.abort();</span>
+</div>
+<div class="flex gap-space-md">
+<span class="w-6 text-right select-none text-on-surface-variant opacity-50">13</span>
+<span>}, [url]);</span>
+</div>
+</div>
+<!-- Run Diagnostics Action Bar -->
+<div class="p-space-sm bg-surface-container flex items-center justify-between border-t-2 border-[#1b1c1c]">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Compiler: Syntax OK</span>
+</div>
+<button class="px-space-md py-space-xs rounded bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs shadow-[2px_2px_0px_#1b1c1c] hover:translate-x-0.5 hover:translate-y-0.5 transition-transform">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+                Run Local Unit Tests
+              </button>
+</div>
+</div>
+</div>
+<!-- TEST RUNNER DIAGNOSTICS BOX -->
+<div class="rounded-lg bg-surface-container-lowest p-space-md shadow-[3px_3px_0px_#1b1c1c] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Test Runner Diagnostics</span>
+<span class="px-space-sm py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-[1px_1px_0px_#1b1c1c]">
+                2 / 3 PASSING
+              </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Execution time: 312ms</span>
+</div>
+<!-- Test Results List -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mt-space-xs">
+<div class="p-space-sm rounded bg-secondary-container/30 shadow-[1px_1px_0px_#1b1c1c] flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Test 01: Abort Signal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Controller cleanly invoked upon quick prop update.</p>
+<span class="text-secondary font-label-sm text-label-sm font-bold">Passed (42ms)</span>
+</div>
+<div class="p-space-sm rounded bg-secondary-container/30 shadow-[1px_1px_0px_#1b1c1c] flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Test 02: Unmount Teardown</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">No setState invocation detected on dead root.</p>
+<span class="text-secondary font-label-sm text-label-sm font-bold">Passed (95ms)</span>
+</div>
+<div class="p-space-sm rounded bg-error-container/30 shadow-[1px_1px_0px_#1b1c1c] flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[18px]">cancel</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Test 03: Transition Sync</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Expected <code class="font-mono">isPending</code> flag to flag during microtask deferral.</p>
+<span class="text-error font-label-sm text-label-sm font-bold">Failed: Assertion Error #19</span>
+</div>
+</div>
+</div>
+<!-- RELATED CONCEPTUAL WARMUP CARD -->
+<div class="rounded-lg bg-surface-container-lowest p-space-lg shadow-[3px_3px_0px_#1b1c1c] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-xs rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold shadow-[1px_1px_0px_#1b1c1c]">
+              CONCEPTUAL DRILL 3.B
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">+10 Bonus Points</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+            Which React 19 primitive guarantees that high-priority user keystrokes bypass deferred network streaming results?
+          </h3>
+<!-- MCQ Options list -->
+<div class="flex flex-col gap-space-sm">
+<!-- Option A -->
+<label class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container flex items-center gap-space-md cursor-pointer transition-colors shadow-[1px_1px_0px_#1b1c1c]">
+<span class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface flex items-center justify-center font-bold font-mono text-label-md shadow-[1px_1px_0px_#1b1c1c]">A</span>
+<span class="font-body-md text-body-md text-on-surface"><code>useDeferredValue</code> with custom timeout fallback configuration</span>
+</label>
+<!-- Option B (Selected / Active Lavender) -->
+<label class="p-space-sm rounded bg-tertiary-container text-on-tertiary-container flex items-center gap-space-md cursor-pointer shadow-[2px_2px_0px_#1b1c1c] rotate-[0.5deg]">
+<span class="w-7 h-7 rounded bg-tertiary text-on-tertiary flex items-center justify-center font-bold font-mono text-label-md shadow-[1px_1px_0px_#1b1c1c]">B</span>
+<span class="font-body-md text-body-md font-semibold"><code>useOptimistic</code> paired with <code>startTransition</code> for action prioritization</span>
+<span class="material-symbols-outlined ml-auto text-tertiary text-[20px]">check_circle</span>
+</label>
+<!-- Option C -->
+<label class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container flex items-center gap-space-md cursor-pointer transition-colors shadow-[1px_1px_0px_#1b1c1c]">
+<span class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface flex items-center justify-center font-bold font-mono text-label-md shadow-[1px_1px_0px_#1b1c1c]">C</span>
+<span class="font-body-md text-body-md text-on-surface"><code>React.memo</code> with deep shallow-equality comparison wrapper</span>
+</label>
+<!-- Option D -->
+<label class="p-space-sm rounded bg-surface-container-low hover:bg-surface-container flex items-center gap-space-md cursor-pointer transition-colors shadow-[1px_1px_0px_#1b1c1c]">
+<span class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface flex items-center justify-center font-bold font-mono text-label-md shadow-[1px_1px_0px_#1b1c1c]">D</span>
+<span class="font-body-md text-body-md text-on-surface">Standard <code>requestIdleCallback</code> invocation directly within dispatch</span>
+</label>
+</div>
+</div>
+</div>
+<!-- RIGHT RAIL: METRICS, NAVIGATOR, SOCRATIC HINTS (Col 9-12) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- SKETCHED QUESTION NAVIGATOR MATRIX -->
+<div class="rounded-lg bg-surface-container-lowest p-space-md shadow-[3px_3px_0px_#1b1c1c] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+              Question Navigator
+            </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono">
+              3 of 9 Active
+            </span>
+</div>
+<!-- 3x3 Matrix Grid -->
+<div class="grid grid-cols-3 gap-space-sm">
+<!-- 01 Completed -->
+<div class="p-space-sm rounded bg-secondary-container text-on-secondary-container flex flex-col items-center justify-center shadow-[2px_2px_0px_#1b1c1c] cursor-pointer hover:-translate-y-0.5 transition-transform">
+<span class="font-headline-sm text-headline-sm font-bold">01</span>
+<span class="font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> Done
+              </span>
+</div>
+<!-- 02 Completed -->
+<div class="p-space-sm rounded bg-secondary-container text-on-secondary-container flex flex-col items-center justify-center shadow-[2px_2px_0px_#1b1c1c] cursor-pointer hover:-translate-y-0.5 transition-transform">
+<span class="font-headline-sm text-headline-sm font-bold">02</span>
+<span class="font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span> Done
+              </span>
+</div>
+<!-- 03 ACTIVE (Sticky Purple Highlight) -->
+<div class="p-space-sm rounded bg-primary-container text-on-primary-container flex flex-col items-center justify-center shadow-[3px_3px_0px_#1b1c1c] rotate-[-2deg] ring-2 ring-[#1b1c1c] cursor-pointer">
+<span class="font-headline-sm text-headline-sm font-extrabold">03</span>
+<span class="font-label-sm text-label-sm font-bold bg-on-surface text-surface px-1 rounded text-[10px]">CURRENT</span>
+</div>
+<!-- 04 Pending -->
+<div class="p-space-sm rounded bg-surface-container text-on-surface flex flex-col items-center justify-center shadow-[1px_1px_0px_#1b1c1c] cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="font-headline-sm text-headline-sm">04</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending</span>
+</div>
+<!-- 05 Pending -->
+<div class="p-space-sm rounded bg-surface-container text-on-surface flex flex-col items-center justify-center shadow-[1px_1px_0px_#1b1c1c] cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="font-headline-sm text-headline-sm">05</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending</span>
+</div>
+<!-- 06 Pending -->
+<div class="p-space-sm rounded bg-surface-container text-on-surface flex flex-col items-center justify-center shadow-[1px_1px_0px_#1b1c1c] cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="font-headline-sm text-headline-sm">06</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending</span>
+</div>
+<!-- 07 Pending -->
+<div class="p-space-sm rounded bg-surface-container text-on-surface flex flex-col items-center justify-center shadow-[1px_1px_0px_#1b1c1c] cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="font-headline-sm text-headline-sm">07</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending</span>
+</div>
+<!-- 08 Pending -->
+<div class="p-space-sm rounded bg-surface-container text-on-surface flex flex-col items-center justify-center shadow-[1px_1px_0px_#1b1c1c] cursor-pointer hover:bg-surface-container-high transition-colors">
+<span class="font-headline-sm text-headline-sm">08</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending</span>
+</div>
+<!-- 09 Locked Essay -->
+<div class="p-space-sm rounded bg-surface-container-low text-on-surface-variant opacity-60 flex flex-col items-center justify-center shadow-[1px_1px_0px_#1b1c1c] cursor-not-allowed">
+<span class="font-headline-sm text-headline-sm">09</span>
+<span class="font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">lock</span> Essay
+              </span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-space-xs border-t border-dashed border-[#1b1c1c]">
+<span class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> 2 Solved
+            </span>
+<span class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span> 1 In Flight
+            </span>
+<span class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span> 6 Remaining
+            </span>
+</div>
+</div>
+<!-- AI SOCRATIC HINT STICKY NOTE -->
+<div class="relative bg-primary-container rounded-lg p-space-md shadow-[4px_4px_0px_#1b1c1c] rotate-[-1deg] flex flex-col gap-space-sm">
+<!-- Doodle Paperclip in top right corner -->
+<div class="absolute -top-3 right-4 w-6 h-10 border-2 border-[#1b1c1c] rounded-full bg-transparent shadow-[1px_1px_0px_#1b1c1c] pointer-events-none"></div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-primary-container text-[20px]">psychology</span>
+<span class="font-headline-sm text-headline-sm text-on-primary-container">Socratic Tutor Prompt</span>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container italic leading-relaxed">
+            "When the cleanup routine triggers an abort signal, fetch raises an AbortError. Are you catching or accidentally swallowing other asynchronous runtime errors?"
+          </p>
+<div class="p-space-xs bg-surface-container-lowest/70 rounded flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span>Remaining Tutor Hints: <strong>1 left</strong></span>
+<span class="text-error font-bold">-5 pts if used</span>
+</div>
+<button class="w-full py-space-xs px-space-sm rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold shadow-[2px_2px_0px_#1b1c1c] hover:bg-surface-container active:translate-x-0.5 active:translate-y-0.5 transition-all flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">lightbulb</span>
+            Unlock Hint for Challenge #03
+          </button>
+</div>
+<!-- SANDBOX VITALS MINI-NOTE -->
+<div class="rounded-lg bg-surface-container-lowest p-space-md shadow-[3px_3px_0px_#1b1c1c] flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">memory</span>
+            Sandbox Vitals &amp; Runtime
+          </span>
+<div class="flex flex-col gap-space-xs mt-space-xs font-mono text-body-sm">
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded">
+<span class="text-on-surface-variant">Heap Allocation:</span>
+<span class="font-bold text-on-surface">14.8 MB / 64 MB</span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded">
+<span class="text-on-surface-variant">Strict Mode:</span>
+<span class="text-secondary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Double-Mount ON
+              </span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded">
+<span class="text-on-surface-variant">Tearing Detection:</span>
+<span class="text-primary font-bold">Enabled (Fiber v19)</span>
+</div>
+</div>
+</div>
+<!-- DOODLE INSPIRATION QUOTE PINNED -->
+<div class="p-space-sm rounded bg-secondary-container/40 shadow-[2px_2px_0px_#1b1c1c] flex items-center gap-space-sm">
+<span class="text-2xl select-none">📌</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">Tutor Tip:</strong> Remember that <code class="font-mono text-secondary font-bold">signal.aborted</code> checks avoid redundant React microtask triggers!
+          </p>
+</div>
+</div>
+</div>
+<!-- 4. BOTTOM STICKY ACTION DRAFTING BAR -->
+<div class="sticky bottom-4 z-30 w-full rounded-lg bg-surface-container-lowest p-space-md shadow-[4px_4px_0px_#1b1c1c] flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Autosave indicator and progress overview -->
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-between sm:justify-start">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">cloud_done</span>
+<span>Draft autosaved 12s ago</span>
+</div>
+<div class="h-4 w-px bg-on-surface-variant/30 hidden sm:block"></div>
+<span class="font-label-md text-label-md font-bold text-on-surface">
+          Overall Progress: 3 of 9 Items Handled
+        </span>
+</div>
+<!-- Action Button Controls -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<!-- Previous Question -->
+<button class="px-space-md py-space-xs rounded bg-surface-container text-on-surface font-label-md text-label-md shadow-[2px_2px_0px_#1b1c1c] hover:bg-surface-container-high transition-transform active:translate-x-0.5 active:translate-y-0.5 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          Previous
+        </button>
+<!-- Save Draft & Pause -->
+<button class="px-space-md py-space-xs rounded bg-surface-container text-on-surface font-label-md text-label-md shadow-[2px_2px_0px_#1b1c1c] hover:bg-surface-container-high transition-transform active:translate-x-0.5 active:translate-y-0.5 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+          Save Draft &amp; Pause
+        </button>
+<!-- Prominent doodle submit button -->
+<button class="px-space-lg py-space-xs rounded bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-[3px_3px_0px_#1b1c1c] hover:bg-primary hover:text-on-primary transition-all active:translate-x-0.5 active:translate-y-0.5 flex items-center gap-space-xs">
+<span>Submit Challenge #03</span>
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

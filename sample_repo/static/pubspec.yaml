@@ -1,0 +1,6 @@
+name: asesmen_1_static
+description: Versi Statis Sistem Nilai Akademik Asesmen 1 DPPB
+version: 1.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'

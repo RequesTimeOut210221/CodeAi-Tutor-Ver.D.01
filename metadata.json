@@ -1,0 +1,6 @@
+{
+  "name": "CodeTutor AI - Codebase Learning & Assessment",
+  "description": "Expert software architect and pedagogical platform that analyzes codebases to generate high-yield assessment quizzes, architectural essays, and code fix challenges with instant AI evaluation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
